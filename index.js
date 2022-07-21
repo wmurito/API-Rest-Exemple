@@ -3,7 +3,7 @@ import {StatusCodes} from 'http-status-codes';
 const app = express();
 const PORT = process.env.PORT || 3000;
 let users = [
-    {id:1, name: 'Wellington Murito', age: 32},
+    {id:1, name: 'Wellington Murito', age: 30},
     {id: 2, name: 'Maryangela Soares', age: 28},
 ];
 
@@ -14,7 +14,7 @@ app.listen(PORT, ()=> {
 });
 
 app.get('/',(request, response)=> {
-    return response.send('<h1> Trabalhando com servidor express.</h1>');
+    return response.send('<h1> Bem vindo uma api rest, criada em node.js.</h1>');
 });
 
 app.get('/users',(request, response)=>{
